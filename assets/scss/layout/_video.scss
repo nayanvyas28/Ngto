@@ -1,0 +1,52 @@
+@use '../utils' as *;
+
+.si__video{
+    &__thumb{
+        position: relative;
+        margin-top: -189px;
+        @media #{$lg}{
+            margin-top: -265px;
+        }
+        @media #{$lg2}{
+            margin-top: 40px;
+        }
+        img{
+            width: 100%;
+        }
+    }
+    &__icon{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        i{
+            color: var(--si-white-color);
+            font-size: 30px;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            width: 94px;
+            height: 94px;
+            background: var(--si-theme-color);
+            @include si-border-radius(50px);
+            border: 5px solid #fff;
+            @include si-transition-mul(.6s);
+            &:hover{
+                background: var(--si-secondary-color);
+            }
+            @media #{$lg2}{
+                width: 80px;
+                height: 80px;
+            }
+            @media #{$xxs}{
+                width: 60px;
+                height: 60px;
+                font-size: 20px;
+            }
+        }
+    }
+}

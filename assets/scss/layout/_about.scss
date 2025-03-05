@@ -1,0 +1,107 @@
+@use '../utils' as *;
+
+.si__about__us{
+    &__thumb{
+        img{
+            width: 100%;
+        }
+    }
+    &__right{
+        @media #{$lg2}{
+            margin-top: 50px;
+        }
+    }
+    &__text{
+        margin-top: 31px;
+        span{
+            display:block;
+            font-weight: 600;
+            font-size: 17px;
+            color: var(--si-secondary-color);
+            margin-top: 19px;
+            @media #{$lg2}{
+                font-size: 16px;
+            }
+            @media #{$xxs}{
+                font-size: 14px;
+            }
+            i{
+                font-weight: 900;
+                font-size: 18px;
+                color: var(--si-theme-color);
+                margin-right: 15px;
+                @media #{$lg2}{
+                    font-size: 16px;
+                }
+                @media #{$xxs}{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    &__box{
+        margin-left: 32px;
+        position: relative;
+        &__counter{
+            background:var(--si-white-color);
+            box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.05);
+            display: inline-block;
+            padding: 16px 33px 17px 63px;
+            border-left: 1px solid var(--si-theme-color);
+            @include si-border-radius(5px);
+            margin-top: 50px;
+            position: relative;
+            h1{
+                display: inline-block;
+                font-weight: 700;
+                font-size: 45px;
+                color: var(--si-theme-color);
+                @media #{$lg2}{
+                    font-size: 41px;
+                }
+                @media #{$xxs}{
+                    font-size: 35px;
+                }
+            }
+            h2{
+                display: inline-block;
+                font-weight: 700;
+                font-size: 49px;
+                color: var(--si-theme-color);
+                @media #{$lg2}{
+                    font-size: 45px;
+                }
+                @media #{$xxs}{
+                    font-size: 37px;
+                }
+            }
+            span{
+                display: block;
+                font-weight: 700;
+                font-size: 20px;
+                color: var(--si-secondary-color);
+                @media #{$lg2}{
+                    font-size: 17px;
+                }
+                @media #{$xxs}{
+                    font-size: 14px;
+                }
+            }
+        }
+        &__icon{         
+            position: absolute;
+            top: 83px;
+            left: -28px;
+            &__inner{
+                width: 64px;
+                height: 64px;
+                line-height: 64px;
+                background: var(--si-theme-bg);
+                @include si-border-radius(50%);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+}

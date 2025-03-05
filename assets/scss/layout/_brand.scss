@@ -1,0 +1,11 @@
+@use '../utils' as *;
+
+.si__brand{
+    &__list{
+        display: flex;
+        text-align: center;
+        ul li a img{
+            width: 100%;
+        }
+    }
+}

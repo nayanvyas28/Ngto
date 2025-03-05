@@ -1,0 +1,106 @@
+@use '../utils' as *;
+
+// SI Section Title
+.si__section__title{
+    h5{
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 10px;
+        color: var(--si-theme-color);
+        @media #{$xs}{
+            font-size: 12px;  
+        }
+        i{
+            font-size: 10px;
+        }
+    }
+    h1{
+        font-size: 45px;
+        line-height: 50px;
+        margin-bottom: 18px;
+        @media #{$xl}{
+            font-size: 43px;
+        }
+        @media #{$lg}{
+            font-size: 35px;
+            line-height: 45px;
+        }
+        @media #{$sm}{
+            font-size: 35px;
+            line-height: 45px;
+        }
+        @media #{$xs}{
+            font-size: 29px;
+            line-height: 40px;
+        }
+        @media #{$xxs}{
+            font-size: 26px;
+            line-height: 40px;
+        }
+    }
+    p{
+        font-size: 18px;
+        br{
+            @media #{$xl}{
+                display: none;
+            }
+        }
+        br{
+            @media #{$lg}{
+                display: none;
+            }
+        }
+        br{
+            @media #{$lg2}{
+                display: none;
+            }
+        }
+        @media #{$lg2}{
+            font-size: 15px;
+        }
+        @media #{$lg}{
+            font-size: 16px;
+        }
+        @media #{$xxs}{
+            font-size: 14px;
+        }
+    }
+    &__highlight{
+        position: relative;
+        overflow: hidden;
+        svg{
+            position: absolute;
+            right: 0;
+            left: 0;
+            bottom: 5px;
+            z-index: 1;
+            animation: si-blink 1s ease-in-out 0.1s infinite;
+            margin: auto;
+            width: 100%;
+            @media #{$sm2}{
+                display: none;
+            }
+        }
+    }
+}
+.colortwo{
+    h1{
+        color: var(--si-white-color);
+    }
+}
+.si__section__title.style__two h5 {
+    color: #0268a8;
+}
+@keyframes si-blink{
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}

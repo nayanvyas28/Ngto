@@ -1,0 +1,19 @@
+@use '../utils' as *;
+
+.custom__container{
+    max-width: 1315px;
+    margin: auto;
+}
+.custom__container__two{
+    max-width: 1313px;
+}
+.custom__width{
+    max-width: 1860px;
+    margin: 0 28px;
+    @media #{$sm2}{
+        margin:0 10px;
+    }
+}
+.custom__width__two{
+    max-width: 1292px;
+}

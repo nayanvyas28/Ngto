@@ -1,0 +1,83 @@
+@use '../utils' as *;
+
+
+.si{
+    &__navigation{
+        display: flex;
+        gap: 20px;
+        justify-content: right;
+        button{
+            height: 60px;
+            width: 60px;
+            line-height: 60px;
+            background: #f3c6c6;
+            border: none;
+            @include si-border-radius(50%);
+            @include si-transition-mul(.6s);
+            &:hover{
+                background: var(--si-theme-color);
+            }
+            i{
+                font-weight: 900;
+                font-size: 16px;
+                line-height: 16px;
+                color: var(--si-theme-color);
+            }
+            &:hover i{
+                color: var(--si-white-color);
+            }
+        }
+    }
+    &__navigation.style__two button{
+        background: #2d283c;
+        i{
+            color: var(--si-theme-color);
+            @include si-transition-mul(.6s);
+        }
+        &:hover i{
+            color: var(--si-white-color);
+        }
+        &:hover{
+            background: var(--si-theme-color);
+        }
+    }
+}
+
+// Testimonail
+.si__navigation__testimonial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 28px;
+    left: -36px;
+    position: relative;
+}
+.si__navigation__testimonial button {
+    border: none;
+    background: transparent;
+}
+// Swiper Scrollbar
+.si-swiper-scrollbar {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -63px;
+    z-index: 5;
+    height: 8px;
+    width: 290px;
+    border-radius: 10px;
+    touch-action: none;
+    background: #fdf2f2;
+    margin: 0 auto;
+}
+.si-swiper-scrollbar .swiper-scrollbar-drag {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background: var(--si-theme-color);
+    border-radius: var(--swiper-scrollbar-border-radius,10px);
+    left: 0;
+    top: 0;
+}
+
+

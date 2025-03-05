@@ -1,0 +1,52 @@
+@use '../utils' as *;
+// SI Counter 
+.si__counter{
+    &__bg{
+        padding: 59px 0 10px;
+        @include si-box-shadow(0px 0px 60px rgba(0, 0, 0, 0.05));
+        @include si-border-radius(40px);
+        background: var(--si-white-color);
+        margin-top: -177px;
+        @media #{$lg2}{
+            padding: 59px 0 40px;
+        }
+    }
+    &__box:hover img{
+        animation: shake 0.5s;
+        animation-iteration-count: infinite;
+    }
+    &__content{
+        h1{
+            display: inline-block;
+            font-weight: 700;
+            font-size: 45px;
+            margin-bottom: 0px;
+        }
+        h3{
+            display: inline-block;
+            font-weight: 700;
+            font-size: 45px;
+            position: relative;
+            top: -2px;
+            margin-left: -4px;
+            margin-bottom: 0px;
+        }
+        span{
+            display: block;
+            margin: 3px 0 20px;
+            font-size: 18px;
+        }
+    }
+    &__icon{
+        display: inline-block;
+        &__inner{
+            width: 85px;
+            height: 85px;
+            background: var(--si-theme-bg);
+            @include si-border-radius(50%);
+            align-items: center;
+            justify-content: center;
+            display: flex;
+        }
+    }
+}

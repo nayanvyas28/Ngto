@@ -1,0 +1,26 @@
+// Transition multiple
+@mixin si-transition-mul($property) {
+    -webkit-transition: $property;
+    -moz-transition: $property;
+    -ms-transition: $property;
+    -o-transition: $property;
+    transition: $property ;
+}
+
+//Border
+@mixin si-border-radius($man) {
+    -webkit-border-radius: $man;
+    -moz-border-radius: $man;
+    -o-border-radius: $man;
+    -ms-border-radius: $man;
+    border-radius: $man;
+}
+
+// Box shadows
+@mixin si-box-shadow($shadow) {
+    -webkit-box-shadow: $shadow;
+    -moz-box-shadow: $shadow;       
+    -ms-box-shadow: $shadow;       
+    -o-box-shadow: $shadow;       
+    box-shadow: $shadow;
+}

@@ -1,0 +1,83 @@
+@use '../utils' as *;
+
+.si__work__process{
+    &__text{
+        p{
+            float: right;
+            font-size: 18px;
+            @media #{$lg}{
+                font-size: 16px;
+            }
+            @media #{$lg2}{
+                float: left;
+            }
+            br{
+                @media #{$lg2}{
+                    display: none;
+                }
+            }
+        }
+    }
+    &__box{
+        &:hover .si__work__process__icon__number{
+            transform: scale(1.1);
+        }
+        margin: 41px 0 32px;
+        position: relative;
+        &::before{
+            position: absolute;
+            content:"";
+            top: 65px;
+            right: -92px;
+            background: url(../images/work-process/Line.png) no-repeat;
+            width: 168px;
+            height: 11px;
+            z-index: 1;
+            @media #{$lg2}{
+                display: none;
+            }
+        }
+    }
+    &__icon{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        &__inner{
+            width: 147px;
+            height: 147px;
+            line-height: 147px;
+            background: transparent;
+            border: 3px solid var(--si-body-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @include si-border-radius(50%);
+            position: relative;
+        }
+        &__number{
+            position: absolute;
+            top: -60px;
+            right: 5px;
+            @include si-transition-mul(.6s);
+            span{
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+                background: var(--si-theme-color);
+                color: var(--si-white-color);
+                @include si-border-radius(50%);
+                display: inline-block;
+                font-size: 17px;
+                font-weight: 600;
+            }
+        }
+    }
+    &__content{
+        p{
+            margin-top: 18px;
+        }
+    }
+}
+.last-box::before{
+    display:none ;
+}

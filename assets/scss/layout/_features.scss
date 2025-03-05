@@ -1,0 +1,168 @@
+@use '../utils' as *;
+
+.si__our__features{
+    &__area{
+        padding: 120px 0 338px;
+        border-radius: 50px;
+        background-attachment: fixed !important;
+    }
+    &__box{
+        background: #002841;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 20px;
+        padding: 50px 0 12px 40px;
+        @media #{$lg2}{
+            margin-bottom: 40px;
+         }
+        &__content{
+            p{
+                color: var(--si-white-color);
+                font-size: 18px;
+                @media #{$xl}{
+                    font-size: 16px;
+                } 
+                @media #{$lg}{
+                    font-size: 13px;
+                } 
+            }
+            ul{
+                list-style: none; 
+                margin-top: 20px;              
+                li{
+                    color: var(--si-white-color);
+                    margin-top: 11px;
+                    font-size: 18px;
+                    @media #{$sm2}{
+                        font-size: 16px;
+                    }
+                    i{
+                        color: var(--si-theme-color);
+                        display: inline-block;
+                        margin-right: 15px;
+                        font-weight: 900;
+                        font-size: 18px;
+                        @media #{$sm2}{
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &__thumb{
+        position: relative;
+        img{
+            width: 100%;
+        }
+        &__text{
+            position: absolute;
+            background: #0268a8;
+            display: inline-block;
+            bottom: 0;
+            right: 0;
+            padding: 26px 82px 30px 30px;
+            @include si-border-radius(20px);
+            margin-right: 26px;
+            margin-bottom: 20px;
+            @media #{$lg}{
+                padding: 24px 66px 26px 24px;
+            }
+            @media #{$sm2}{
+                padding: 11px 41px 11px 11px;
+            }
+            @media #{$xxs}{
+                display: none;
+            }
+            
+            h1{
+                color: var(--si-white-color);
+                display: inline-block;
+                font-weight: 700;
+                font-size: 77px;
+                @media #{$lg}{
+                    font-size: 59px;
+                }
+                @media #{$sm2}{
+                    font-size: 50px;
+                }
+            }
+            h3{
+                color: var(--si-white-color);
+                display: inline-block;
+                font-weight: 700;
+                font-size: 77px;
+                @media #{$lg}{
+                    font-size: 59px;
+                } 
+                @media #{$sm2}{
+                    font-size: 50px;
+                } 
+            }
+            span{
+                color: var(--si-white-color);
+                display: block;
+                font-weight: 600;
+                font-size: 17px;
+                margin-bottom: -2px;
+                @media #{$lg}{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+.si__our__features__two{
+    &__bg{
+        background: var(--si-theme-bg);
+        padding: 40px 29px 40px 29px;
+        @include si-border-radius(20px);
+    }
+    &__form{
+        input{
+            border: none;
+            background: var(--si-white-color);
+            width: 100%;
+            @include si-border-radius(30px);
+            padding: 14px 0 14px 31px;
+            margin-bottom: 31px;
+        }
+        input::placeholder{
+            font-size: 18px;
+            color: #4d697a;
+        }
+        input:focus{
+            border: none;
+            box-shadow: none;
+            outline: 0;
+        }
+        textarea{
+            width: 100%;
+            height: 153px;
+            border: none;
+            @include si-border-radius(30px);
+            padding: 22px 33px;
+        }
+        textarea:focus{
+            border: none;
+            box-shadow: none;
+            outline: 0;
+        }
+        button{
+            border: none;
+            width: 100%;
+            text-transform: uppercase;
+            background: var(--si-theme-color);
+            color: var(--si-white-color);
+            font-weight: 700;
+            font-size: 13px;
+            padding: 16px 0px;
+            @include si-border-radius(50px);
+            @include si-transition-mul(.6s);
+            margin-top: 29px;
+            &:hover{
+                background: var(--si-secondary-color);
+            }
+        }
+    }
+}

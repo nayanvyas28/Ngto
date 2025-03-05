@@ -1,0 +1,277 @@
+@use '../utils' as *;
+.si__project__details{
+    &__area{
+        margin-top: 121px;
+        margin-bottom: 105px;
+    }
+    &__content{
+        h3{
+            font-size: 30px;
+            margin-bottom: 20px;
+            @media #{$sm}{
+                font-size: 27px;
+            }
+            @media #{$xs}{
+                font-size: 23px;
+            }
+            @media #{$xxs}{
+                font-size: 19px;
+            }
+            @media #{$mxm}{
+                font-size: 16px;
+            }
+        }
+        p{
+            font-size: 18px;
+            margin-bottom: 40px;
+            @media #{$xl}{
+                font-size: 16px;
+            }
+            br{
+                @media #{$lg}{
+                    display: none;
+                }
+            }
+            br{
+                @media #{$lg2}{
+                    display: none;
+                }
+            }
+            @media #{$mxs}{
+                font-size: 14px;
+            }
+            @media #{$mxm}{
+                font-size: 14px;
+            }
+            @media #{$xxs}{
+                font-size: 15px;
+            }
+            @media #{$xs}{
+                font-size: 16px;
+            }
+        }
+        img{
+            margin-bottom: 21px;
+            @media #{$xl}{
+                width: 100%;
+            }
+            @media #{$lg}{
+                width: 100%;
+            }
+            @media #{$lg2}{
+                width: 100%;
+            }
+        }
+    }
+    &__text{
+        p{
+            margin-bottom: 19px;
+            font-size: 18px;
+            @media #{$xl}{
+                font-size: 16px;
+            }
+            br{
+                @media #{$lg}{
+                    display: none;
+                }
+            }
+            br{
+                @media #{$lg2}{
+                    display: none;
+                }
+            }
+            @media #{$mxs}{
+                font-size: 14px;
+            }
+            @media #{$mxm}{
+                font-size: 14px;
+            }
+            @media #{$xxs}{
+                font-size: 15px;
+            }
+            @media #{$xs}{
+                font-size: 16px;
+            }
+        }
+        span{
+            display: block;
+            margin-top: 9px;
+                @media #{$lg}{
+                    font-size: 15px;
+                }
+                @media #{$mxs}{
+                    font-size: 14px;
+                }
+                @media #{$mxm}{
+                    font-size: 14px;
+                }
+                @media #{$xxs}{
+                    font-size: 15px;
+                }
+            i{
+                color: var(--si-theme-color);
+                font-weight: 900;
+                font-size: 16px;
+                margin-right: 10px;
+            }
+        }
+    }
+    &__thumb{
+        margin-top: 59px;
+        display: flex;
+        gap: 30px;
+            @media #{$lg}{
+                gap: 24px;
+        }
+        img{
+            @media #{$xl}{
+                width: 48%;
+            }
+            @media #{$lg}{
+                width: 48%;
+            }
+            @media #{$lg2}{
+                width: 48%;
+            }
+            @media #{$xs}{
+                width: 47%;
+            }
+            @media #{$xxs}{
+                width: 46%;
+            }
+            @media #{$mxs}{
+                width: 44%;
+            }
+        }
+    }
+    &__right{
+        margin-top: 35px;
+        h6{
+            font-size: 20px;
+        }
+        p{
+            font-size: 18px;
+            margin-top: 15px;
+            @media #{$xl}{
+                font-size: 15px;
+            }
+            br{
+                @media #{$lg}{
+                    display: none;
+                }
+            }
+            br{
+                @media #{$lg2}{
+                    display: none;
+                }
+            }
+            @media #{$mxs}{
+                font-size: 14px;
+            }
+            @media #{$mxm}{
+                font-size: 14px;
+            }
+            @media #{$xxs}{
+                font-size: 15px;
+            }
+            @media #{$xs}{
+                font-size: 16px;
+            }
+        }
+    }
+    &__box{
+        border: 1px solid rgba(0,0,0,0.4);
+        @include si-border-radius(20px);
+        h5{
+            font-size: 17px;
+            font-weight: 600;
+            color: var(--si-secondary-color);
+            background: var(--si-theme-bg);
+            @include si-border-radius(20px 20px 0px 0px);
+            text-align: center;
+            padding: 15px 0px;
+            margin-bottom: 33px;
+            @media #{$mxs}{
+                font-size: 14px;
+            }
+            @media #{$mxm}{
+                font-size: 14px;
+            }
+            @media #{$xxs}{
+                font-size: 15px;
+            }
+        }
+        ul{
+            li{
+                font-size: 17px;
+                margin-left: 41px;
+                margin-bottom: 21px;
+                @media #{$mxs}{
+                    font-size: 14px;
+                }
+                @media #{$mxm}{
+                    font-size: 14px;
+                }
+                @media #{$xxs}{
+                    font-size: 15px;
+                }
+                @media #{$xs}{
+                    font-size: 16px;
+                }
+                a{
+                    color: var(--si-secondary-color);
+                    font-weight: 600;                  
+                }
+                span{
+                    margin-left: 10px;
+                }
+                strong{
+                    color: var(--si-secondary-color);
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+    &__btn{
+        width: 330px;
+        height: 67px;
+        line-height: 67px;
+        border: 1px solid rgba(0,0,0,0.4);
+        @include si-border-radius(20px);
+        text-align: center;
+        margin-left: 41px;
+        margin-top: 29px;
+        margin-bottom: 39px;
+        @include si-transition-mul(.6s);
+        @media #{$xl}{
+            margin-left: 12px;
+        }
+        @media #{$lg}{
+            width: 267px;
+            margin-left: 13px;
+        }
+        @media #{$xxs}{
+            width: 199px;
+        }
+        &:hover{
+            border: 1px solid var(--si-theme-color);
+        }
+        a{
+            font-weight: 700;
+            font-size: 14px;
+            text-transform: uppercase;
+            color: var(--si-secondary-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            i{
+                font-size: 18px;
+                @media #{$mxs}{
+                    font-size: 14px;
+                }
+                
+            }
+        }
+    }
+}

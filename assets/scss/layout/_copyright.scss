@@ -1,0 +1,58 @@
+@use '../utils' as *;
+
+.si__copyright{
+    &__area{
+        padding: 37px 0 13px;
+    }
+    &__content{
+        p{
+            color: #335367;
+            font-size: 18px;
+            @media #{$lg2}{
+                font-size: 16px;
+            }
+        }
+    }
+    &__text{
+        text-align: end;
+        @media #{$lg2}{
+            text-align: left;
+        }
+        ul li{
+                display: inline;
+                margin-right: 20px;
+                font-size: 18px;
+                color: #335367;
+                cursor: pointer;
+                @include si-transition-mul(.6s);
+                @media #{$sm2}{
+                    display: block;
+                }
+                a{
+                    @include si-transition-mul(.6s);
+                }
+                &:hover a{
+                    color: var(--si-theme-color);
+                }
+                @media #{$lg2}{
+                    font-size: 16px;
+                }
+        }
+    }
+}
+.style__two p{
+    color: var(--si-theme-rgba);
+}
+.style__two ul li{
+    color: var(--si-theme-rgba);
+}
+.style__two ul li a{
+    @include si-transition-mul(.6s);
+}
+.style__two ul li a:hover{
+    color: var(--si-theme-color);
+}
+.style_three {
+    padding: 32px 0 15px;
+    border-top: 1px solid rgba(255,255,255,0.2);
+}

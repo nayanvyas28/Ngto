@@ -1,0 +1,33 @@
+@use '../utils' as *;
+.si__breadcumb{
+    &__area{
+        padding-top: 293px;
+        padding-bottom: 193px;
+    }
+    &__text{
+        h1{
+            @media #{$lg2}{
+                font-size: 39px;
+            }
+        }
+        span{
+            font-weight: 600;
+            font-size: 17px;
+            color: var(--si-secondary-color);
+            position: relative;
+            top: 17px;
+            a{
+                @include si-transition-mul(.6s);
+                &:hover{
+                    color: var(--si-theme-color);
+                }
+            }
+            i{
+                color: var(--si-theme-color);
+                font-weight: 900;
+                font-size: 16px;
+                margin: 13px;
+            }
+        }
+    }
+}

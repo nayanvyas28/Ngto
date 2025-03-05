@@ -1,0 +1,190 @@
+@use '../utils' as *;
+
+.si__our__team{
+
+    &__thumb{
+        position: relative;
+        img{
+            width: 100%;
+        }
+    }
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: var(--si-theme-bg);
+        position: absolute;
+        width: 80%;
+        @include si-transition-mul(.4s);
+        bottom: 30px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        padding: 20px 28px 21px;
+        @include si-border-radius(20px);
+        h5{
+            margin-bottom: 0;
+        }
+        span{
+            display: block;
+        }
+    }
+    &__share{
+        z-index: 3;
+        position: relative;
+        a i{
+            width: 50px;
+            z-index: 2;
+            height: 50px;
+            line-height: 50px;
+            background: var(--si-white-color);
+            text-align: center;
+            color: var(--si-theme-color);
+            @include si-border-radius(50px);
+            font-weight: 900;
+            font-size: 20px;
+            @include si-transition-mul(.6s);
+            border: 1px solid #828282;
+        }
+    }
+
+    &__social{
+        position: absolute;
+        display: inline-block;
+        background: var(--si-white-color);
+        text-align: center;
+        bottom: 58px;
+        right: 26px;
+        @include si-border-radius(25px);
+        @include si-transition-mul(.6s);
+        border: 1px solid var(--si-theme-color);
+        opacity: 0;
+        visibility: hidden;
+        padding: 13px 17px 10px;
+        a{
+            display: block;
+            @include si-transition-mul(.6s);
+        &:hover{
+            color: var(--si-theme-color);
+        }
+        }
+    }
+}
+.si__our__team:hover .si__our__team__content{
+    background: var(--si-white-color);
+}
+.si__our__team .si__our__team__share a:hover i{
+    background: var(--si-theme-color);
+    color: var(--si-white-color);
+    border: 1px solid var(--si-theme-bg);
+}
+.si__our__team .si__our__team__wrap:hover .si__our__team__social{
+    bottom: 88px;
+    opacity: 1;
+    visibility: visible;
+}
+
+// SI Our Two Team \\
+.si__our__team__two{
+    &__box{
+        @include si-transition-mul(.6s);
+    }
+    &__thumb{
+        position: relative;
+            &::before{
+                position: absolute;
+                content: "";
+                bottom: 0;
+                left: 0;
+                background: linear-gradient(0.62deg, rgba(0, 40, 65, 0.85) 3.54%, rgba(0, 40, 65, 0) 81.24%);
+                width: 100%;
+                height: 227px;
+                @include si-border-radius(20px);
+            }
+        img{
+            width: 100%;
+        }
+    }
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        width: 100%;
+        @include si-transition-mul(.6s);
+        bottom: 28px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        padding: 0px 30px 0px;
+        @include si-border-radius(20px);
+        h5{
+            margin-bottom: 0;
+        }
+        span{
+            display: block;
+            padding-top: 5px;
+        }
+    }
+    &__share{
+        position: absolute;
+        z-index: 2;
+        bottom: 42px;
+        right: 30px;
+        i{
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            line-height: 40px;
+            background: var(--si-white-color);
+            text-align: center;
+            color: var(--si-theme-color);
+            @include si-border-radius(50px);
+            font-weight: 900;
+            font-size: 16px;
+            @include si-transition-mul(.6s);
+            border: 1px solid var(--si-theme-color);
+        }
+    } 
+    &__social{
+        position: absolute;
+        display: inline-block;
+        text-align: center;
+        bottom: 20px;
+        right: 11px;
+        @include si-border-radius(25px);
+        @include si-transition-mul(.6s);       
+        opacity: 0;
+        visibility: hidden;
+        padding: 24px 17px 6px;
+        a{
+            display: block;
+            @include si-transition-mul(.6s);
+            margin-bottom: 13px;
+            i{
+                border: 1px solid var(--si-theme-color);
+                background: var(--si-white-color);
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+                @include si-border-radius(50px);
+                @include si-transition-mul(.6s);
+                text-align: center;
+                &:hover{
+                    background: var(--si-theme-color);
+                    color: var(--si-white-color);
+                }
+            }
+        }
+    }
+}
+.si__our__team__two__box .si__our__team__two__share:hover i{
+    color: var(--si-white-color);
+    border: 1px solid var(--si-theme-color);
+    background: var(--si-theme-color);
+}
+.si__our__team__wrap__two:hover .si__our__team__two__social{
+    bottom: 76px;
+    opacity: 1;
+    visibility: visible;
+}

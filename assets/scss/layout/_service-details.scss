@@ -1,0 +1,339 @@
+@use '../utils' as *;
+// si__service__details__left Area
+.si__service__details__left{
+    &__area{
+        margin-top: 121px;
+        margin-bottom: 105px;
+    }
+    &__content{
+        img{
+            @media #{$lg}{
+                width: 100%;
+            }
+            @media #{$xl}{
+                width: 100%;
+            }
+            @media #{$lg2}{
+                width: 100%;
+            }
+        }
+        h3{
+            margin-top: 22px;
+            font-size: 30px;
+            margin-bottom: 21px;
+            @media #{$lg}{
+                font-size: 28px;
+            }
+            @media #{$lg2}{
+                font-size: 27px;
+            }
+            @media #{$sm}{
+                font-size: 25px;
+            }
+            @media #{$xs}{
+                font-size: 21px;
+            }
+            @media #{$xxs}{
+                font-size: 17px;
+            }
+            @media #{$mxm}{
+                font-size: 15px;
+            }
+            @media #{$mxs}{
+                font-size: 14px;
+            }
+        }
+        p{
+            margin-top: 21px;
+            font-size: 18px;
+            br{
+                @media #{$xl}{
+                    display: none;
+                }
+            }
+            br{
+                @media #{$lg}{
+                    display: none;
+                }
+            }
+            br{
+                @media #{$lg2}{
+                    display: none;
+                }
+            }
+            @media #{$lg}{
+                font-size: 17px;
+            }
+            @media #{$lg2}{
+                font-size: 17px;
+            }
+            @media #{$sm}{
+                font-size: 16px;
+            }
+            @media #{$xs}{
+                font-size: 15px;
+            }
+            @media #{$xxs}{
+                font-size: 14px;
+            }
+        }
+    }
+    &__box{
+        display: flex;
+        align-items: center;
+        margin-top: 40px;
+        @media #{$xl}{
+            display: block;
+        }
+        @media #{$lg}{
+            display: block;
+        }
+        @media #{$lg2}{
+            display: block;
+        }
+        @media #{$sm}{
+           display: block;
+        }
+        @media #{$xs}{
+            display: block;
+        }
+        @media #{$xxs}{
+            display: block;
+        }
+    }
+    &__thumb{
+        img{
+            @media #{$xl}{
+                width: 100%;
+            }
+            @media #{$lg}{
+                width: 100%;
+            }
+        }
+    }
+    &__text{
+        margin-left: 31px;
+        @media #{$xl}{
+           margin-top: 25px;
+        }
+        @media #{$lg}{
+           margin-top: 25px;
+        }
+        @media #{$lg2}{
+           margin-top: 25px;
+        }
+        span{
+            font-weight: 600;
+            font-size: 17px;
+            color: var(--si-secondary-color);
+            display:block;
+            margin-top: 5px;
+            @media #{$xl}{
+                margin-left: -31px;
+            }
+            @media #{$lg}{
+                margin-left: -31px;
+            }
+            @media #{$lg2}{
+                margin-left: -31px;
+                font-size: 15px;
+            }
+            @media #{$sm}{
+                margin-left: -31px;
+            }
+            @media #{$xs}{
+                margin-left: -31px;
+            }
+            @media #{$xxs}{
+                margin-left: -31px;
+            }
+            i{
+                color: var(--si-theme-color);
+                font-weight: 900;
+                font-size: 16px;
+                margin-right: 10px;
+            }
+        }
+    }
+    &__paragraph p{
+        margin-top: 21px;
+        font-size: 18px;
+        br{
+            @media #{$xl}{
+                display: none;
+            }
+        }
+        br{
+            @media #{$lg}{
+                display: none;
+            }
+        }
+        br{
+            @media #{$lg2}{
+                display: none;
+            }
+        }
+        @media #{$lg}{
+            font-size: 17px;
+        }
+        @media #{$lg2}{
+            font-size: 17px;
+        }
+        @media #{$sm}{
+            font-size: 16px;
+        }
+        @media #{$xs}{
+            font-size: 15px;
+        }
+        @media #{$xxs}{
+            font-size: 14px;
+        }
+    }
+    &__mainbox{
+        padding: 0 30px;
+        border: 1px solid rgba(0,0,0,0.4);
+        @include si-border-radius(20px);
+        padding-bottom: 27px;
+        margin-bottom: 30px;
+    }
+    &__twotext{
+        border-bottom: 1px solid rgba(0,0,0,0.4);
+        h6{
+            margin-top: 34px;
+            margin-bottom: 15px;
+        }
+    }
+    &__list{
+        ul{
+            li{
+                font-weight: 600;
+                font-size: 17px;
+                color: var(--si-secondary-color);
+
+                margin-top: 28px;
+                @media #{$mxm}{
+                    font-size: 16px;
+                }
+                a{
+                    @include si-transition-mul(.6s);
+                    display: flex;
+                    justify-content: space-between;
+                    &:hover{
+                        color: var(--si-theme-color);
+                    }
+                    i{
+                        width: 35px;
+                        height: 35px;
+                        line-height: 35px;
+                        background: var(--si-theme-bg);
+                        text-align: center;
+                        @include si-border-radius(50%);
+                        @include si-transition-mul(.6s);
+                        @media #{$mxm}{
+                            font-size: 16px;
+                        }
+                    }
+                    &:hover i{
+                        background: var(--si-theme-color);
+                        color: var(--si-white-color);
+                    }
+                }
+            }
+        }
+    }
+    &__texttwo{
+        margin-top: 30px;
+        span{
+            font-weight: 700;
+            font-size: 20px;
+            color: var(--si-secondary-color);
+            @media #{$xl}{
+                font-size: 19px;
+            }
+            @media #{$mxm}{
+                font-size: 18px;
+            }
+            @media #{$mxs}{
+                font-size: 15px;
+            }
+            br{
+                @media #{$lg}{
+                    display: none;
+                }
+            }
+        }
+        p{
+            font-size: 18px;
+            margin-top: 19px;
+            @media #{$xl}{
+                font-size: 17px;
+            }
+            br{
+                @media #{$xl}{
+                    display: none;
+                }
+            }
+            br{
+                @media #{$lg}{
+                    display: none;
+                }
+            }
+            br{
+                @media #{$mxs}{
+                    display: none;
+                }
+            }
+            @media #{$lg}{
+                font-size: 16px;
+            }
+            @media #{$sm}{
+                font-size: 17px;
+            }
+            @media #{$xs}{
+                font-size: 15px;
+            }
+        }
+    }
+    &__right{
+        border: 1px solid rgba(0,0,0,0.4);
+        @include si-border-radius(5px);
+        display: inline-block;
+        width: 330px;
+        height: 67px;
+        line-height: 67px;
+        text-align: center;
+        margin-bottom: 20px;
+        @include si-transition-mul(.6s);
+        &:hover{
+            border: 1px solid var(--si-theme-color);
+        }
+        @media #{$xl}{
+            width: 297px;
+        }
+        @media #{$lg}{
+            width: 239px;
+        }
+        @media #{$md}{
+            width: 100%;
+        }
+        @media #{$sm}{
+            width: 100%;
+        }
+        @media #{$xs}{
+            width: 100%;
+        }
+        a{
+            font-weight: 700;
+            font-size: 13px;
+            text-transform: uppercase;
+            color: var(--si-secondary-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            i{
+                font-size: 18px;            
+            }
+        }
+    }
+}

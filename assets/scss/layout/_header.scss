@@ -1,0 +1,193 @@
+@use '../utils' as *;
+
+// Si Header 
+.si__header{
+    &__area{
+        padding-top: 30px;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        @media #{$mm}{
+            display: none;
+        }
+    }
+    &__content{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__logo{
+        margin-top: 3px;
+    }
+    &__menubar{
+        display: inline-block;
+        
+    }
+    &__menu{
+        border: 1px solid var(--si-secondary-color);
+        width: 672px;
+        height: 61px;
+        padding: 13px 0px;
+        border-radius: 40px;
+        ul{
+            display: flex;
+            justify-content: space-between;
+            padding: 0 25px;
+            li{
+                position: relative;
+                z-index: 1;
+                display: inline;
+                a{
+                    @include si-transition-mul(.6s);
+                    display: inline-block;
+                    &:hover{
+                        color: var(--si-theme-color);
+                    }
+                    i{
+                        font-size: 14px;
+                        margin-left: 2px;
+                    }
+                }
+            }
+            .current__item{
+                a{
+                    color: var(--si-white-color);
+                    padding: 0 20px;
+                    background: var(--si-theme-color);
+                    border-radius: 50px;
+                    &:hover{
+                        color: var(--si-white-color);
+                    }
+                }
+            }
+        }
+    }
+    &__right{
+            display: flex;
+            align-items: center;
+            margin-top: -4px;
+        
+        i{
+            color: var(--si-secondary-color);
+            font-size: 20px;
+        }
+    }
+    &__offcanvas__bar{
+        width: 61px;
+        height: 61px;
+        background: var(--si-theme-color);
+        direction: rtl;
+        border-radius: 50%;
+        margin-left: 38px;
+        &__inner{
+            position: relative;
+             top: 18px;
+             right: 15px;
+        }
+        .line-one {
+            display: block;
+            width: 21px;
+            height: 2px;
+            margin-bottom: 7px;
+            background: var(--si-white-color);
+            transition: .6s;
+        }
+        .line-two {
+            display: block;
+            width: 31px;
+            height: 2px;
+            margin-bottom: 7px;
+            background: var(--si-white-color);
+        }
+        .line-three {
+            display: block;
+            width: 26px;
+            height: 2px;
+            background: var(--si-white-color);
+            transition: .6s;
+        }
+        &:hover .line-one{
+            width: 31px;
+        }
+        &:hover .line-three{
+            width: 31px;
+        }
+    }
+}
+
+.si__header__two{
+    &__area{
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        z-index: 3;
+        margin-top: 48px;
+        @media #{$mm}{
+            display: none;
+        } 
+    }
+    &__bg{
+        background: #002841;
+        padding: 17px 0 17px;
+        @include si-border-radius(80px);
+        border: 2px solid #004773;
+        z-index: 2;
+        position: relative;
+    }
+    &__logo{
+        margin-left: 40px;
+    }
+    &__box{
+        display: flex;
+        margin-left: 65px;
+        align-items: center;
+        justify-content: space-between;
+        padding-right: 38px;
+    }
+    &__menu{
+        ul{
+            li {
+                position: relative;
+                z-index: 1;
+                display: inline;
+                margin-right: 28px;
+                a{
+                    color: var(--si-white-color);
+                    @include si-transition-mul(.6s);
+                    &:hover{
+                        color: var(--si-theme-color);
+                    }
+                    i{
+                        font-weight: 900;
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+    }
+    &__content{
+        display: flex;
+        margin-left: 83px;
+        &__img{
+          display: inline-block;  
+        }
+        &__text{
+            display: inline-block;
+            margin-left: 13px;
+            span{
+                font-size: 18px;
+                color: var(--si-white-color);
+                font-weight: 400;
+                margin-top: -6px;
+                display: inline-block;
+            }
+            h6 a{
+                color: var(--si-white-color);
+                font-size: 17px;
+                font-weight: 600;
+                margin-top: 7px;
+            }
+        }
+    }
+}

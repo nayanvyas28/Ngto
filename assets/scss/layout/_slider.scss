@@ -1,0 +1,250 @@
+@use '../utils' as *;
+
+// SI Slider Area
+.si__slider{
+    &__area{
+        padding: 393px 0 158px;
+        @media #{$xl}{
+            padding: 351px 0 158px;
+        }
+        @media #{$lg}{
+            padding: 250px 0 150px;
+        }
+        @media #{$md}{
+            padding: 227px 0 120px;
+        }      
+        @media #{$sm}{
+            padding: 200px 0 100px;
+        }      
+        @media #{$xs}{
+            padding: 190px 0 90px;
+        }      
+        @media #{$xxs}{
+            padding: 180px 0 80px;
+        }      
+    }
+    &__content{
+        position: relative;
+        z-index: 1;
+        h1{
+            font-weight:700 ;
+            font-size: 77px;
+            line-height: 94px;
+            margin-top: 3px;
+            @media #{$xl}{
+                font-size: 61px;
+                line-height: 71px;
+            }
+            @media #{$lg}{
+                font-size: 58px;
+                line-height: 68px;
+            }
+            @media #{$md}{
+                font-size: 55px;
+                line-height: 65px;
+            }
+            @media #{$sm}{
+                font-size: 48px;
+                line-height: 60px;
+            }
+            @media #{$xs}{
+                font-size: 40px;
+                line-height: 55px;
+            }
+            @media #{$xxs}{
+                font-size: 30px;
+                line-height: 42px;        
+            }
+        }
+        a i {
+            font-size: 45px;
+            background: var(--si-white-color);
+            height: 55px;
+            width: 55px;
+            display: inline-block;
+            text-align: center;
+            border-radius: 50%;
+            line-height: 55px;
+            color: var(--si-theme-color);
+        }
+        span{
+            font-weight: 500;
+            font-size: 22px;
+            color: var(--si-secondary-color);
+            position: relative;
+            left: 5px;
+            top: -11px;
+            @media #{$lg2}{
+                font-size: 17px;       
+            }
+        }
+    }
+}
+
+.si__slider__two{
+    &__area{
+        position: relative;
+    }
+    &__bg{
+        position: absolute;
+        top: 0;
+        right: 0;
+        @media #{$lg}{
+            display: none;       
+        }
+        @media #{$lg2}{
+            display: none;       
+        }
+        img{
+            width: 100%;
+        }
+    }
+    &__content{
+        margin-top: 239px;
+        position: relative;
+        z-index: 1;
+        @media #{$xl2}{
+            margin-top: 100px;      
+        }
+    }
+    &__text{
+        position: relative;
+        h1{
+            font-weight: 700;
+            font-size: 77px;
+            color: var(--si-white-color);
+            margin-top: 90px;
+            @media #{$lg}{
+                font-size: 65px;
+            }
+            @media #{$lg2}{
+                font-size: 55px;
+            }
+            @media #{$sm2}{
+                font-size: 33px;
+            }
+        }
+    }
+    &__right{
+        display: flex;
+        position: relative;
+        z-index: 2;
+        @media #{$lg2}{
+            display: block;
+        }
+        p{
+            color: var(--si-white-color);
+            margin-top: 54px;
+            @media #{$lg}{
+                font-size: 14px;
+            }
+            @media #{$lg2}{
+                margin-top: 20px;
+            }
+            @media #{$lg2}{
+                font-size: 16px;
+            }
+            @media #{$sm2}{
+                font-size: 14px;
+            }
+        }
+        h2{
+            font-weight: 700;
+            font-size: 77px;
+            color: var(--si-white-color);
+            margin-top: 43px;
+            margin-left: 65px;
+            @media #{$lg}{
+                font-size: 65px;
+            }
+            @media #{$lg2}{
+                margin-left: 0px;
+                margin-top: 20px;
+            }
+            @media #{$lg2}{
+                font-size: 55px;
+            }
+            @media #{$sm2}{
+                font-size: 35px;
+            }
+            span{
+                background: #0268a8;
+                padding: 3px 9px 4px 7px;
+                border-radius: 20px;
+            }
+        }
+    }
+    &__box{
+        display: flex;
+        margin-top: 110px;
+        @media #{$lg2}{
+            display: block;
+            margin-top: 70px;
+        }
+    }
+    &__bottom{
+        margin-left: 60px;
+        @media #{$lg2}{
+            margin-left: 0px;
+        }
+    }
+    &__btn{
+        margin-top: -50px;
+        @media #{$lg2}{
+            margin-top: -9px;
+        }
+    }
+    &__counter{
+        background: #0d334a;
+        padding: 15px 0;
+        margin-top: 42px;
+        border-radius: 20px;
+        position: relative;
+        z-index: 2;
+        @media #{$lg2}{
+            display: none;
+        }
+        &__number{
+            padding-right: 44px;
+            margin-left: 40px;
+            border-right: 1px solid rgba(255,255,255,0.1);
+            display: inline-block;
+            @media #{$md}{
+                margin-left: 37px;
+            }
+            h6{
+                font-size: 45px;
+                color: var(--si-white-color);
+                display: inline-block;
+                @media #{$sm2}{
+                    font-size: 35px;
+                }
+            }
+            h5{
+                color: var(--si-white-color);
+                font-size: 45px;
+                display: inline-block;
+                margin-left: -4px;
+                position: relative;
+                top: -3px;
+                @media #{$sm2}{
+                    font-size: 35px;
+                }
+            }
+            span{
+                color: var(--si-white-color);
+                display: block;
+                @media #{$sm2}{
+                    font-size: 15px;
+                }
+            }
+        }
+        &__number:first-child{
+            margin-left: 29px;
+        }
+        &__number:last-child{
+            border: none;
+            padding-right: 29px;
+        }
+    }
+}

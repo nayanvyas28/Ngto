@@ -1,0 +1,189 @@
+@use '../utils' as *;
+
+.si__testimonial{
+    &__bg{
+        margin-top: -218px;
+        @include si-border-radius(20px);
+        padding: 84px 0px 69px 70px;
+        @media #{$lg2}{
+            margin-top: 50px;
+        }
+        @media #{$sm2}{
+            padding: 84px 0px 69px 0px;
+        }
+    }
+    &__icon{
+        margin-bottom: 53px;
+    }
+    &__text p{
+        font-size: 20px;
+        @media #{$xl}{
+            font-size: 17px;
+        }
+        @media #{$lg}{
+            font-size: 16px;
+        }
+        @media #{$lg2}{
+            font-size: 16px;
+        }
+        br{
+            @media #{$sm2}{
+                display: none;
+             }
+        }
+    }
+    &__user{
+        display: flex;
+        align-items: center;
+        margin-top: 56px;
+        &__content{
+            margin-left: 20px;
+            h6{
+                margin-bottom: 5px;
+            }
+            span{
+                font-size: 18px;
+                @media #{$sm2}{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    &__navigation{
+        gap: 30px;
+        display: flex;
+        margin-top: 60px;
+        justify-content: end;
+        @media #{$lg2}{
+           margin-bottom: 30px;
+           justify-content: left;
+        }
+        button{
+            height: 60px;
+            width: 60px;
+            line-height: 60px;
+            background: #f3c6c6;
+            border: none;
+            @include si-border-radius(50%);
+            @include si-transition-mul(.6s);
+            &:hover{
+                background: var(--si-theme-color);
+            }
+            i{
+                font-weight: 900;
+                font-size: 16px;
+                line-height: 16px;
+            }
+            &:hover i{
+                color: var(--si-white-color);
+            }
+        }
+    }
+    &__navigation.style__two button{
+        background: #2d283c;
+        i{
+            color: var(--si-theme-color);
+        }
+        &:hover i{
+            color: var(--si-white-color);
+        }
+        &:hover{
+            background: var(--si-theme-color);
+        }
+    }
+}
+.style__two {
+    margin-top: 0px;
+}
+// SI Testimonial Two Area 
+.si__testimonial__two{
+    &__area{
+        @include si-border-radius(50px);
+        padding-bottom: 312px;
+        @media #{$lg2}{
+            padding-bottom: 160px;
+        }
+    }
+    &__thumb{
+        img{
+            width: 100%;
+        }
+    }
+    &__mine{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media #{$lg2}{
+            display: block;
+        }
+    }
+    &__box{
+        border: 1px solid #335367;
+        @include si-border-radius(30px);
+        padding: 40px 47px 41px 40px;
+        display: inline-block;
+        @media #{$lg2}{
+            margin-top: 30px;
+        }      
+        &__text{
+            h5{
+                font-weight: 400;
+                line-height: 46px;
+                opacity: 0.9;
+                @media #{$xl}{
+                    font-size: 20px;
+                }
+                @media #{$lg}{
+                    font-size: 16px;
+                    line-height: 37px;
+                }
+                br{
+                    @media #{$lg2}{
+                        display: none;
+                    }
+                }
+                @media #{$sm2}{
+                    font-size: 19px;
+                    line-height: 37px;
+                }
+                @media #{$xs}{
+                    font-size: 17px;
+                    line-height: 35px;
+                }
+            }
+        }
+        &__inner{
+            display: flex;
+            margin-top: 29px;
+            align-items: center;
+            justify-content: space-between;
+            &__content{
+                h6{
+                    @media #{$lg}{
+                        font-size: 16px;
+                    }
+                    @media #{$sm2}{
+                        font-size: 19px;
+                    }
+                    @media #{$xs}{
+                        font-size: 17px;
+                    }
+                }
+                span{
+                    color: var(--si-white-color);
+                    opacity: 0.8;
+                    font-size: 18px;
+                    @media #{$lg}{
+                        font-size: 16px;
+                    }
+                    @media #{$sm2}{
+                        font-size: 18px;
+                    }
+                    @media #{$xs}{
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}

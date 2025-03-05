@@ -1,0 +1,233 @@
+@use '../utils' as *;
+.si__service{
+    &__area {
+        padding: 118px 0 298px;
+        border-radius: 50px;
+    }
+    &__mine{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @media #{$lg2}{
+            display: block;
+        }
+    }
+    &__box{
+        background: var(--si-white-color);
+        padding: 31px 0px 0px 30px;
+        border-radius: 15px;
+        overflow: hidden;
+        @include si-transition-mul(.6s);
+        position: relative;
+        z-index: 1;
+        &:hover &__icon::before{
+            border: 2px dotted var(--si-theme-color);
+        }
+        &:before{
+            position: absolute;
+            content: "";
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 0%;
+            @include si-transition-mul(.6s);
+            background: var(--si-secondary-color);
+            z-index: -1;
+        }
+        &:hover:before{
+            height: 100%;
+            top: 0;
+        }
+    }
+    &__box:hover svg{
+        fill: rgba(255,255,255,0.3);
+    }
+    &__box:hover &__title a,
+    &__box:hover &__btn{
+        color: var(--si-white-color);
+    }
+
+    &__title a{
+        line-height: 1.7;
+        display: inline-block;
+        @include si-transition-mul(.6s);
+        &:hover{
+            color: var(--si-theme-color) !important;
+        }
+    }
+    &__btn{
+        display: inline-block;
+        padding: 28px 0 58px;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 13px;
+        @include si-transition-mul(.6s);
+        &:hover,
+        &:hover i{
+            color: var(--si-theme-color);
+        }
+        i{
+            color: #0268A8;
+            font-weight: 700;
+            margin-left: 7px;
+            font-size: 14px;
+        }
+    }
+    &__box__icon{
+        text-align: end;
+        margin-top: 22px;
+        position: relative;
+        svg{
+            position: relative;
+            top: -15px;
+            left: -15px;
+            fill: var(--si-secondary-color);
+            @include si-transition-mul(.6s);
+        }
+        &::before{
+            position: absolute;
+            content: "";
+            top: -44px;
+            right: -24px;
+            height: 131px;
+            width: 131px;
+            background: transparent;
+            border: 2px dotted #828282;
+            border-radius: 50%;
+            animation: rotateme3 5s infinite linear;
+        }
+    }
+    &__navigation.style__two button{
+        background: #2d283c;
+        i{
+            color: var(--si-theme-color);
+        }
+        &:hover i{
+            color: var(--si-white-color);
+        }
+        &:hover{
+            background: var(--si-theme-color);
+        }
+    }
+}
+.si__navigation{
+    display: flex;
+    gap: 20px;
+    justify-content: right;
+    @media #{$lg2}{
+        justify-content: left;
+    }
+    button{
+        height: 60px;
+        width: 60px;
+        line-height: 60px;
+        background: #f3c6c6;
+        border: none;
+        @include si-border-radius(50%);
+        @include si-transition-mul(.6s);
+        &:hover{
+            background: var(--si-theme-color);
+        }
+        i{
+            font-weight: 900;
+            font-size: 16px;
+            line-height: 16px;
+            color: var(--si-theme-color);
+        }
+        &:hover i{
+            color: var(--si-white-color);
+        }
+    }
+}
+
+
+// SI Service Two 
+.si__service__two{
+    &__area{
+        padding: 119px 0 122px;
+        border-radius: 50px;
+    }
+    &__mine{
+        display: flex;
+        align-items: center;
+        justify-content: space-between; 
+        @media #{$lg2}{
+            display: block;
+        }
+    }
+    &__box{
+        background: #0d334a;
+        display: inline-block;
+        padding: 37px 0px 30px 32px ;
+        @include si-border-radius(20px);
+        margin-top: 40px; 
+        @include si-transition-mul(.6s);
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        &:before{
+            position: absolute;
+            content: "";
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 0%;
+            @include si-transition-mul(.6s);
+            background: var(--si-theme-color);
+            z-index: -1;
+        }
+        &:hover:before{
+            height: 100%;
+            top: 0;
+        }
+        h6{
+            margin-bottom: 25px;
+            color: var(--si-white-color);
+            a{
+                color: var(--si-white-color);
+            }
+        }
+        p{
+            color: var(--si-white-color);
+            opacity: 0.8;
+            font-size: 16px;
+        }
+        &__btn a{
+            font-weight: 700;
+            font-size: 13px;
+            text-transform: uppercase;
+            margin-top: 9px;
+            display: inline-block;
+            color: var(--si-white-color);
+             i{
+                font-weight: 900;
+                font-size: 15px;
+                color: var(--si-theme-color);
+                margin-left: 8px;
+            }
+        }
+        &:hover &__btn a i{
+            color: var(--si-white-color);
+        }
+        &__number span{
+            font-weight: 700;
+            font-size: 77px;
+            opacity: 0.2;
+            margin-right: 20px;
+            margin-top: 6px;
+            display: inline-block;
+            @include si-transition-mul(.6s);
+        }
+        &:hover &__number span{
+            opacity: 0.2;
+            color: var(--si-white-color);
+        }
+    }
+}
+.style-box{
+    border: 1px solid var(--si-secondary-color);
+    margin-bottom: 32px;
+}
+.style__service{
+    padding: 118px 0 80px;
+}
